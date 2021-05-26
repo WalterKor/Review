@@ -7,9 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import chanho.koreait.board.user.UserEntity;
+
 
 public class MyUtils {	
-	/*
+	
 	public static int getLoginUserPk(HttpServletRequest req) {
 		if(req == null) { return 0; }		
 		return getLoginUser(req).getIuser();
@@ -20,7 +22,7 @@ public class MyUtils {
 		HttpSession hs = req.getSession();
 		return (UserEntity) hs.getAttribute("loginUser");
 	}
-	*/
+	
 	public static int getParamInt(String key, HttpServletRequest req) {
 		String val = req.getParameter(key);
 		int intVal = parseStringToInt(val);

@@ -13,15 +13,15 @@
 	<header>
 		<nav>
 			<ul>
-				<c:if test="${empty sesscionScope.loginUser}">
+				<c:if test="${empty sessionScope.loginUser}">
 					<li><a href="/user/login">로그인</a></li>
 				</c:if>
-				<c:if test="${not empty sesscionScope.loginUser}">
+				<c:if test="${not empty sessionScope.loginUser}">
 					<li><a href="/user/logout">로그아웃</a></li>
 					<li><a href="/board/write">글쓰기</a></li>
 					<li><a href="/board/like">좋아요</a></li>
 				</c:if>
-				<li><a href="/board/list"></a></li>
+				<li><a href="/board/list">리스트</a></li>
 			</ul>
 		</nav>
 	</header>

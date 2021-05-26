@@ -2,6 +2,6 @@
  * 
  */
 
-function goBack() {
-	history.back();
+function goBack(){
+	window.history.forward();
 }
