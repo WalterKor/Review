@@ -23,8 +23,9 @@ function regAjax(param){
 	fetch('cmtInsSel', init)
 	.then(function(res){
 		return res.json();
-	}).then(function(myJson){
-		
+	})
+	.then(function(myJson){
+		console.log(myJson);
 		switch(myJson.result){
 			case 0:
 			alert('등록실패');

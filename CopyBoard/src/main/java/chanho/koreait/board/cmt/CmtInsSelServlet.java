@@ -26,6 +26,7 @@ public class CmtInsSelServlet extends HttpServlet {
 		
 		List<CmtDomain> list = CmtDAO.selBoardCmtList(param);
 	}
+	
 	//등록
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
@@ -37,7 +38,7 @@ public class CmtInsSelServlet extends HttpServlet {
 		param.setIboard(iboard);
 		param.setCmt(cmt);
 		param.setIuser(iuser);
-		
+				
 		int result = CmtDAO.insBoardCmt(param);
 		
 		response.getWriter()
